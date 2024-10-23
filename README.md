@@ -29,4 +29,4 @@ Welcome to my personal portfolio website. This site highlights my skills, experi
 - **Contact Information:** Links to my email, LinkedIn, GitHub, and social media for easy communication.
 
 ## 🔗 Live Demo
-- Check out the live version of my portfolio here: Live Portfolio
+- Check out the live version of my portfolio here: [Live Portfolio](https://hasnine.netlify.app/)
