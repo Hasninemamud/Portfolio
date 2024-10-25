@@ -15,11 +15,11 @@
                     colors: {
                         primary: {
                             light: '#FF6B6B', // Coral
-                            dark: '#E64833', // Dark teal (new color)
+                            dark: '#2F2F2F', // Dark gray (new color)
                         },
                         secondary: {
                             light: '#4ECDC4', // Turquoise
-                            dark: '#E64833', // Dark cyan (new color)
+                            dark: '#1F1F1F', // Darker gray (new color)
                         }
                     }
                 }
@@ -36,7 +36,7 @@
 </head>
 
 <body
-    class="bg-gradient-to-br from-primary-light to-secondary-light dark:from-primary-dark dark:to-secondary-dark text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300"
+    class="bg-gradient-to-br from-primary-light to-secondary-light dark:from-primary-dark dark:to-secondary-dark text-gray-900 dark:text-white min-h-screen transition-colors duration-300">
     <!-- Your content here -->
 
     <header class="fixed top-0 left-0 right-0 z-50 p-4 bg-primary-dark dark:bg-gray-900">
@@ -61,7 +61,7 @@
 
     <div class="flex flex-col md:flex-row pt-16">
         <nav id="sideNav"
-            class="nav-btn p-2 rounded-full transition-colors duration-200 bg-primary-light dark:bg-gray-700 text-primary-dark dark:text-white"
+            class="hidden md:block md:w-20 bg-opacity-10 backdrop-blur-lg flex md:flex-col justify-center md:justify-start items-center p-4 md:p-0 bg-primary-dark dark:bg-gray-900 fixed left-0 top-16 bottom-0 w-full md:w-20 z-40">
             <ul class="flex md:flex-col items-center justify-center md:h-full space-x-4 md:space-x-0 md:space-y-8">
                 <li>
                     <button data-section="about"
@@ -86,7 +86,7 @@
                 </li>
                 <li>
                     <button data-section="projects"
-                        class="nav-btn p-2 rounded-full transition-colors duration-200 text-primary-light dark:text-gray-400 hover:bg-primary-dark dark:hover:bg-gray-800 hover:bg-opacity-20">
+ class="nav-btn p-2 rounded-full transition-colors duration-200 text-primary-light dark:text-gray-400 hover:bg-primary-dark dark:hover:bg-gray-800 hover:bg-opacity-20">
                         <i data-lucide="folder"></i>
                         <span class="sr-only">Projects</span>
                     </button>
@@ -96,7 +96,8 @@
 
         <main class="flex-1 p-4 md:p-8 overflow-auto ml-0 md:ml-20">
             <div id="content"
-                class="class="max-w-6xl mx-auto bg-white dark:bg-gray-800 bg-opacity-90 backdrop-blur-lg rounded-lg shadow-xl p-6 md:p-10"
+                class="max-w-6xl mx-auto bg-white dark:bg-gray-800 bg-opacity-90 backdrop-blur-lg rounded-lg shadow-xl p-6 md:p-10">
+
                 <!-- About Section -->
                 <section id="about" class="space-y-8">
                     <div
@@ -132,7 +133,7 @@
                             <!-- Resume Download Button -->
                             <div class="mt-8">
                                 <a href="A.K.M Hasnine Mamud Resume.pdf" download
-                                    class="inline-block bg-primary-light text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-dark dark:bg-secondary-dark dark:hover:bg-secondary-light transition-colors duration-300">
+                                    class="inline-block bg-primary-light text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-dark dark:hover:bg-gray-800 transition-colors duration-300">
                                     <i data-lucide="download" class="w-5 h-5 inline-block mr-2"></i> Resume
                                 </a>
                             </div>
@@ -169,8 +170,6 @@
                     </div>
                 </section>
 
-
-
                 <!-- Professional Section -->
                 <section id="professional" class="space-y-6 hidden">
                     <h2 class="text-2xl font-bold mb-4 text-primary-dark dark:text-white">Professional Experience</h2>
@@ -180,7 +179,7 @@
                         <p class="text-lg text-gray-600 dark:text-gray-300">RobotTechValley</p>
                         <p class="text-sm text-gray-500 dark:text-gray-400">2024/04 – 2024/07 | Dhaka, Bangladesh</p>
                         <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700 dark:text-gray-300">
-                            <li>Collaborated with a cross-functional team to enhance user experience, resulting in a 20%
+ <li>Collaborated with a cross-functional team to enhance user experience, resulting in a 20%
                                 increase in system adoption.</li>
                             <li>Integrated authentication systems used by 100+ daily users for secure access control,
                                 increasing data security.</li>
